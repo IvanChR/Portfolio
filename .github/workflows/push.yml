@@ -2,7 +2,7 @@ name: Deploy de la pagina
 on: 
   push:
     branches:
-      -main
+      - main
 jobs:
   deploy-page:
     runs-on: ubuntu-latest
@@ -13,5 +13,5 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-actions@4.1.4
         with: 
-          branch: gh-pages
-          folder: .  
+          branch: gh-pages # the branch the action should deploy to
+          folder: .
