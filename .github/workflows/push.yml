@@ -11,7 +11,7 @@ jobs:
         uses: actions/chekout@v2.3.1
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-actions@4.1.4
+        uses: JamesIves/github-pages-deploy-action@4.1.4
         with: 
           branch: gh-pages # the branch the action should deploy to
           folder: .
