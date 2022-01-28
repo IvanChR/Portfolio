@@ -74,8 +74,14 @@ body {
 a {
     color: var(--second-color);
     display: inline-block;
+    transition: .5s;
+    text-decoration: none;
 }
 
+a:hover {
+    color: #BDBDBD;
+    text-decoration: none;
+}
 
 .navbar img {
     width: 50px;
