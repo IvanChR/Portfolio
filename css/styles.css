@@ -90,7 +90,7 @@ a {
     height: 100vh;
 }
 
-.first-section .container {
+.first-section :is(.container, .row) {
     height: 100%;
 }
 
