@@ -1,0 +1,110 @@
+:root {
+    --main-color: #0F3885;
+    --bg-main-color: #0F3885;
+    --second-color: #00E4ff;
+    --bg-second: #00E4ff;
+    --dark-blue: #031128;
+    --bg-dark-blue: #031128;
+    --red: #910808;
+    --bg-red: #910808;
+    --white: #fff;
+    --bg-white: #fff;
+    --black: #000;
+    --bg-black: #000;
+    --y-100: 100px;
+
+}
+
+/******* Utility classes*******/
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.fs-2 {
+    font-size: 2rem;
+}
+
+.fs-3 {
+    font-size: 3rem;
+}
+
+.fs-4 {
+    font-size: 4rem;
+}
+
+.fs-7 {
+    font-size: 7rem;
+}
+
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.margin-y {
+    margin-top: var(--y-100);
+    margin-bottom: var(--y-100);
+}
+
+.padding-y {
+    padding-top: var(--y-100);
+    padding-bottom: var(--y-100);
+}
+
+
+/******* CSS *******/
+
+
+body {
+    background: var(--bg-dark-blue);
+    color: var(--white);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--second-color);
+    display: inline-block;
+}
+
+
+.navbar img {
+    width: 50px;
+}
+
+
+
+
+/******* First section *******/
+
+.first-section {
+    height: 100vh;
+}
+
+.first-section .container {
+    height: 100%;
+}
+
+.social-links {
+    margin-top: auto;
+    align-self: end;
+}
+
+.first-section ul {
+    display: flex;
+    justify-content: end;
+}
+
+.first-section ul li {
+    margin-left: 1rem;
+    list-style: none;
+}
