@@ -13,7 +13,16 @@
     --bg-black: #000;
     --y-100: 100px;
 
+
 }
+
+
+/** Reset **/
+ul,
+ul li {
+    list-style: none; padding:0;
+}
+
 
 /******* Utility classes*******/
 
@@ -87,7 +96,7 @@ a:hover {
     width: 50px;
 }
 
-
+footer ul li {margin-right:1rem;}
 
 
 /******* First section *******/
