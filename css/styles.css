@@ -20,7 +20,8 @@
 /** Reset **/
 ul,
 ul li {
-    list-style: none; padding:0;
+    list-style: none;
+    padding: 0;
 }
 
 
@@ -96,7 +97,9 @@ a:hover {
     width: 50px;
 }
 
-footer ul li {margin-right:1rem;}
+footer ul li {
+    margin-right: 1rem;
+}
 
 
 /******* First section *******/
@@ -130,4 +133,62 @@ footer ul li {margin-right:1rem;}
     .container {
         min-width: 1400px;
     }
+}
+
+
+/*** Swiper**/
+
+.swiper {
+    margin: 50px auto;
+    width: 100%;
+    height: 540px;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.swiper-slide:nth-child(1n) {
+    background-color: rgb(206, 17, 17);
+}
+
+.swiper-slide:nth-child(2n) {
+    background-color: rgb(0, 140, 255);
+}
+
+.swiper-slide:nth-child(3n) {
+    background-color: rgb(10, 184, 111);
+}
+
+.swiper-slide:nth-child(4n) {
+    background-color: rgb(211, 122, 7);
+}
+
+.swiper-slide:nth-child(5n) {
+    background-color: rgb(118, 163, 12);
+}
+
+.swiper-slide:nth-child(6n) {
+    background-color: rgb(180, 10, 47);
+}
+
+.swiper-slide:nth-child(7n) {
+    background-color: rgb(35, 99, 19);
+}
+
+.swiper-slide:nth-child(8n) {
+    background-color: rgb(0, 68, 255);
+}
+
+.swiper-slide:nth-child(9n) {
+    background-color: rgb(218, 12, 218);
+}
+
+.swiper-slide:nth-child(10n) {
+    background-color: rgb(54, 94, 77);
 }

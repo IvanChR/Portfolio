@@ -9,6 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -54,6 +55,11 @@
                     <div class="col-12">
                         <ul>
                             <li>
+                                <a href="https://www.behance.net/IvanChavez">
+                                    <i class="fab fa-behance-square fa-2x"></i>
+                                </a>
+                            </li>
+                            <li>
                                 <a href="https://github.com/Vanddy">
                                     <i class="fab fa-github fa-2x"></i>
                                 </a>
@@ -61,11 +67,6 @@
                             <li>
                                 <a href="https://www.artstation.com/vandy">
                                     <i class="fab fa-artstation fa-2x"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.behance.net/IvanChavez">
-                                    <i class="fab fa-behance-square fa-2x"></i>
                                 </a>
                             </li>
                             <li>
@@ -126,12 +127,30 @@
             <div class="row mb-5 text-center">
                 <h2 class="">Work</h2>
             </div>
-            <div class="row">
-                <div class="col-12 col-lg-6">
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-5 text-end">
                     <h3 class="text-uppercase">Design</h3>
                     <a href=""> See Projects</a>
                 </div>
-                <div class="col-12 col-lg-6"></div>
+
+
+
+                <div class="col-12 col-lg-6">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">Slide 4</div>
+                            <div class="swiper-slide">Slide 5</div>
+                            <div class="swiper-slide">Slide 6</div>
+                            <div class="swiper-slide">Slide 7</div>
+                            <div class="swiper-slide">Slide 8</div>
+                            <div class="swiper-slide">Slide 9</div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </div>
@@ -161,24 +180,33 @@
                 <div class="col-12 col-lg-6 ">
                     <h3>Skills</h3>
                     <hr>
-                    <p>
-                        Lorem ipsum dolor amet, consectetur adipiscing elit.
-                        Pellentesque eget orci laoreet, ullamcorper lorem eget, interdum nibh.
-                        Sed eros est, commodo at orci quis, consequat maximus justo.
-                        Quisque eu sem vitae sapien maximus vehicula sit amet sit amet eros.
-                        Duis blandit ante sit amet elit venenatis interdum. Proin suscipit tellus lacus.
-                    </p>
+                    <div class="">
+
+                        <div class="col-lg-6">
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>Javascript</p>
+                            <p>Photoshop</p>
+                            <p>Illustrator</p>
+                            <p>Maya</p>
+                            <p>Zbrush</p>
+                        </div>
+
+                    </div>
 
                 </div>
-
             </div>
-        </div>
     </section>
 
     <footer>
         <div class="container ">
             <div class="social-links text-center">
                 <ul class="d-flex justify-content-center align-items-center">
+                    <li>
+                        <a href="https://www.behance.net/IvanChavez">
+                            <i class="fab fa-behance-square fa-2x"></i>
+                        </a>
+                    </li>
                     <li>
                         <a href="https://github.com/Vanddy">
                             <i class="fab fa-github fa-2x"></i>
@@ -187,11 +215,6 @@
                     <li>
                         <a href="https://www.artstation.com/vandy">
                             <i class="fab fa-artstation fa-2x"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.behance.net/IvanChavez">
-                            <i class="fab fa-behance-square fa-2x"></i>
                         </a>
                     </li>
                     <li>
@@ -208,9 +231,24 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            grabCursor: true,
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -400],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
