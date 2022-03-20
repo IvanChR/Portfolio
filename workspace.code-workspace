@@ -3,6 +3,9 @@
 		{
 			"name": "my-web",
 			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\Code\\Proyectos javascript\\JavaScript30-master\\JavaScript30-master"
 		}
 	],
 	"settings": {
