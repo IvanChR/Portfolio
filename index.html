@@ -34,16 +34,16 @@
                 </button>
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
-                        <a class="nav-link text-white" href="#">About Me </a>
-                        <a class="nav-link text-white" href="#servicess">Services</a>
-                        <a class="nav-link text-white" href="#">Projects</a>
-                        <a class="nav-link text-white" href="#">Skills</a>
-                        <a class="nav-link text-white" href="#">Contact</a>
+                        <a class="nav-link text-white" href="#about">About Me</a>
+                        <!--                         <a class="nav-link text-white" href="#services">Services</a> -->
+                        <a class="nav-link text-white" href="#skills">Skills</a>
+                        <a class="nav-link text-white" href="#projects">Projects</a>
+                        <!--                         <a class="nav-link text-white" href="#contact">Contact</a> -->
                     </div>
                 </div>
             </div>
         </nav>
-        <section class="aboutMe-section padding-y">
+        <section class="aboutMe-section padding-y" id="about">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-12 col-lg-6">
@@ -52,7 +52,7 @@
                             <h1 class="uppercase fw-800 ">Iv&aacute;n
                                 Ch&aacute;vez</h1>
                             <h2 class="fw-300 fs-2">Diseñador UI/Desarrollador
-                                front-end </h2>
+                                Web </h2>
                             <div class="mt-4">
                                 <p>
                                     Soy un diseñador gráfico enfocado en el
@@ -75,6 +75,13 @@
                                 <p class="mb-3"><i class="fas fa-envelope"></i>
                                     examplemail@gmail.com</p>
                                 <ul>
+                                    <li>
+                                        <a
+                                            href="https://www.linkedin.com/in/ivanchavezr/"
+                                            target="_blank">
+                                            <i class="fab fa-linkedin fa-2x"></i>
+                                        </a>
+                                    </li>
                                     <li>
                                         <a
                                             href="https://www.behance.net/IvanChavez"
@@ -121,14 +128,67 @@
                 </div>
             </div>
         </section>
-        <section class="skills-section padding-y">
+        <section class="skills-section padding-y" id="skills">
             <div class="container">
                 <div class="row mb-5">
                     <h2 class="uppercase text-center">habilidades</h2>
                 </div>
                 <div class="row justify-content-between">
-                    <div class="col-12 col-md-5">
-                        <h3 class="mb-5 text-center">Técnicas</h3>
+                    <div class="col-12 col-md-4">
+                        <h3 class="mb-5 text-center">Software</h3>
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/Photoshop-logo.svg"
+                                    alt="photoshop"
+                                    loading="lazy">
+                                <p>Photoshop</p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/Illustrator-logo.svg"
+                                    alt="photoshop"
+                                    loading="lazy">
+                                <p>Illustrator</p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/AfterEffects-logo.svg"
+                                    alt="photoshop"
+                                    loading="lazy">
+                                <p>After Effects</p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/Affinity-logo.svg"
+                                    alt="photoshop"
+                                    loading="lazy">
+                                <p>Affinity Designer</p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/figma-logo.svg"
+                                    alt="photoshop"
+                                    loading="lazy">
+                                <p>Figma</p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/maya-logo.svg" alt="photoshop"
+                                    loading="lazy">
+                                <p>Maya</p>
+                            </div>
+                            <div class="col-12 col-md-4 text-center icon-skill">
+                                <img class="logo-software"
+                                    src="./image/zbrush-white-logo.png"
+                                    alt="photoshop"
+                                    loading="lazy">
+                                <p>Zbrush</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h3 class="mb-5 text-center">Desarrollo</h3>
                         <div class="row">
                             <div class="col-12 col-md-4 text-center icon-skill">
                                 <i class="fab fa-html5"></i>
@@ -152,8 +212,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 ">
-                        <h3 class="mb-5 text-center">Blandas</h3>
+                    <div class="col-12 col-md-4 ">
+                        <h3 class="mb-5 text-center">Personales</h3>
                         <div class="row">
                             <div class="col-12 col-md-4 text-center icon-skill
                                 ">
@@ -192,7 +252,7 @@
         </div>
     </section>
 
-    <section class="experiencia-section padding-y">
+    <section class="experiencia-section padding-y" id="experience">
         <div class="container">
             <div class="row mb-5 text-center">
                 <h2 class="">Experiencia</h2>
@@ -201,7 +261,7 @@
                 <div class="col-12 col-md-4 experience-card text-center">
                     <h4>Pixelab Soluciones Creativas</h4>
                     <p>Diseñador gráfico</p>
-                    <span>2017 - Actualidad</span>
+                    <span>2017 - 2023</span>
                 </div>
                 <div class="col-12 col-md-4 experience-card text-center">
                     <h4>MiPc Comunicaciones</h4>
@@ -214,18 +274,18 @@
                     <span>2015</span>
                 </div>
             </div>
-            <div class="text-center">
+            <!-- <div class="text-center">
                 <a href="#" class="btn btn-light button-ghost d-inline-block">
                     Descarga mi CV
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
-    <section class="work-section padding-y">
+    <section class="projects-section padding-y" id="projects">
         <div class="container">
             <div class="container">
                 <div class="row mb-5 text-center">
-                    <h2 class="">Portafolio</h2>
+                    <h2 class="">Proyectos</h2>
                 </div>
                 <div class="row justify-content-between">
                     <div class="col-12 col-md-3">
@@ -250,6 +310,12 @@
                     <ul class="d-flex justify-content-center
                         align-items-center">
                         <li>
+                            <a href="https://www.linkedin.com/in/ivanchavezr/"
+                                target="_blank">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
                             <a href="https://www.behance.net/IvanChavez"
                                 target="_blank">
                                 <i class="fab fa-behance-square fa-2x"></i>
@@ -269,7 +335,7 @@
                         </li>
                         <li>
                             <a
-                                href="https://www.instagram.com/vandy.ilustra/"
+                                href="https://www.instagram.com/vandy.3d"
                                 target="_blank">
                                 <i class="fab fa-instagram fa-2x"></i>
                             </a>
