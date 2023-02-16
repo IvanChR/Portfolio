@@ -105,6 +105,10 @@ a:hover {
     width: 50px;
 }
 
+.navbar .nav-link {
+    scroll-behavior: smooth;
+}
+
 footer ul li {
     margin-right: 1rem;
 }
@@ -160,9 +164,22 @@ font-size:2rem;
 margin-bottom:1rem;
 }
 
+.skills-section .logo-software{
+max-width:50px;
+height:auto;
+width:100%;
+margin-bottom:16px;
+
+}
+
 .experience-card {
 
     
+}
+
+
+.projects-section {
+
 }
 
 /**** Media Queries **/
