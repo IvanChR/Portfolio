@@ -6,7 +6,7 @@
   --yellow: #fff000;
   --bg-black: #0e0e0e;
   --bg-dark-blue: #000732;
-  --bg-ligh-blue: #004a79;
+  --bg-light-blue: #004a79;
   --bg-gray: #2a2d47;
   --bg-red: #6d0047;
   --padding-y: 150px;
@@ -40,9 +40,11 @@ li {
 
 img {
   display: block;
-  width: 100%;
+  width: auto;
+  margin: auto;
 }
 
+.btn,
 button {
   border: none;
   cursor: pointer;
@@ -61,11 +63,7 @@ section {
   height: 631px;
   left: 1511px;
   top: 74px;
-  background: conic-gradient(
-    from 180deg at 50% 50%,
-    #00a2ff 0deg,
-    #6d0047 360deg
-  );
+  background: conic-gradient(from 180deg at 50% 50%, #00a2ff 0deg, #6d0047 360deg);
   filter: blur(250px);
   z-index: -1;
 }
@@ -76,11 +74,7 @@ section {
   height: 1276px;
   left: 151px;
   top: 1031px;
-  background: conic-gradient(
-    from 180deg at 50% 50%,
-    #00a2ff 0deg,
-    #ff00f0 360deg
-  );
+  background: conic-gradient(from 180deg at 50% 50%, #00a2ff 0deg, #ff00f0 360deg);
   filter: blur(350px);
   z-index: -1;
   opacity: 0.14;
@@ -100,17 +94,38 @@ section {
 /**** Gradients ***/
 /***** COMPONENTS *****/
 .btn {
-  background: transparent;
-  border: solid 1px;
-  border-color: var(--blue);
+  border: none;
   padding: 0.75rem 1.25rem;
+  font-size: 16px;
+  color: var(--white);
   border-radius: 12px;
+  transition: background 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-active {
+  background: var(--blue);
   font-size: 16px;
   color: var(--white);
   cursor: pointer;
 }
-.btn a {
+.btn-active:hover {
+  background: var(--white);
+  color: black;
+  border: none;
+}
+
+.btn-ghost {
+  background: transparent;
+  border: solid 1px;
+  border-color: var(--blue);
   color: var(--white);
+  cursor: pointer;
+}
+.btn-ghost:hover {
+  background: var(--blue);
+  color: white;
+  border: none;
 }
 
 .section-title {
@@ -234,7 +249,7 @@ section {
   max-height: 500px;
   height: auto;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 /*************** SKILLS ***********/
@@ -281,7 +296,7 @@ section {
   display: grid;
   justify-content: space-between;
   gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 .skills .skills__container .tech__skills ul .icons img {
   height: 50px;
@@ -312,27 +327,23 @@ section {
   font-size: 16px;
   color: white;
 }
-.projects .projects__container {
-  flex-direction: column;
-  gap: 48px;
+.projects .projects__filter .filter__button.active {
+  background-color: var(--blue);
 }
-.projects .projects__container .project__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  max-width: 1140px;
+.projects .projects__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 36px;
 }
 .projects .projects__container .project__item .project__image {
   position: relative;
   border-radius: 12px;
-  overflow: hidden;
-  min-width: 556px;
-  min-height: 282px;
   width: 100%;
-  height: 100%;
+  height: auto;
   text-align: center;
   background: linear-gradient(180deg, #2a2d47, transparent);
+  margin-bottom: 16px;
+  min-height: 230px;
 }
 .projects .projects__container .project__item .project__image .project__link {
   position: absolute;
@@ -345,25 +356,24 @@ section {
   border-radius: 6px;
 }
 .projects .projects__container .project__item .project__image .image-project {
-  position: absolute;
-  bottom: 0;
   width: 80%;
-  height: 80%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 16/9;
+  position: absolute;
   left: 50%;
   translate: -50% 0;
-}
-.projects .projects__container .project__item .project__info {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+  bottom: 0;
 }
 .projects .projects__container .project__item .project__info small {
   color: var(--blue);
   font-size: 18px;
 }
 .projects .projects__container .project__item .project__info .project__title {
-  font-size: 56px;
+  font-size: 36px;
   color: var(--red);
+  margin-bottom: 16px;
 }
 .projects .projects__container .project__item .project__info .project__text {
   line-height: 2rem;
@@ -445,4 +455,4 @@ section {
   font-size: 2rem;
   border-radius: 12px;
   border: none;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */
