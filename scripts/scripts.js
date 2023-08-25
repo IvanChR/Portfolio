@@ -125,3 +125,18 @@ function removeActiveClass(items) {
   })
 
 }
+
+
+const goUp = document.querySelector(".goUp")
+goUp.addEventListener("click", scrollToTop)
+
+
+function scrollToTop() {
+  const rootElement = document.documentElement
+
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
+
+}
