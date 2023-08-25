@@ -18,10 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -54,16 +51,16 @@
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar__list ms-auto">
                   <li class="navbar__listItem text-white">
-                    <a href="#about">About</a>
+                    <a href="#about">Bio</a>
                   </li>
                   <li class="navbar__listItem text-white">
                     <a href="#skills">Skills</a>
                   </li>
                   <li class="navbar__listItem text-white">
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">Proyectos</a>
                   </li>
                   <li class="navbar__listItem text-white">
-                    <a href="#experience">Experience</a>
+                    <a href="#experience">Experiencia</a>
                   </li>
                 </ul>
               </div>
@@ -79,72 +76,22 @@
           >
             <div class="col-12 col-lg-6">
               <div class="about__description__title">
-                <h1 class="uppercase fw-800">Iv&aacute;n Ch&aacute;vez</h1>
-                <h5 class="text-gradient-clip fw-300 fs-2">
-                  Diseñador UI/Desarrollador Web
-                </h5>
+                <h1 class="about__name uppercase fw-800"></h1>
+                <h5 class="about__position text-gradient-clip fw-300 fs-2"></h5>
               </div>
               <div class="about__description__text mt-4">
-                <p>
-                  Soy un diseñador gráfico enfocado en el diseño de interfaces
-                  para web y desarrollador front-end. Cuento con más de 7 años
-                  de experiencia en el área de diseño y 4 en el área del
-                  desarrollo web con una fuerte base técnica en HTML, CSS y
-                  Javascript. Me encanta trabajar en proyectos desafiantes y
-                  estoy constantemente buscando nuevas formas de mejorar mis
-                  habilidades y conocimientos.
-                </p>
+                <p></p>
               </div>
               <div class="about__contact">
                 <div class="socialLinks">
-                  <p class="mb-3">
-                    <i class="fas fa-envelope"></i> examplemail@gmail.com
+                  <p class="mb-3 email">
+                    <i class="fas fa-envelope"></i>
                   </p>
-                  <ul>
-                    <li class="contact__icons">
-                      <a
-                        href="https://www.artstation.com/ivanchr"
-                        target="_blank"
-                      >
-                        <i class="fab fa-artstation fa-2x"></i>
-                      </a>
-                    </li>
-                    <li class="contact__icons">
-                      <a
-                        href="https://www.linkedin.com/in/ivanchavezr/"
-                        target="_blank"
-                      >
-                        <i class="fab fa-linkedin fa-2x"></i>
-                      </a>
-                    </li>
-                    <li class="contact__icons">
-                      <a
-                        href="https://www.behance.net/IvanChavez"
-                        target="_blank"
-                      >
-                        <i class="fab fa-behance-square fa-2x"></i>
-                      </a>
-                    </li>
-                    <li class="contact__icons">
-                      <a href="https://github.com/Vanddy" target="_blank">
-                        <i class="fab fa-github fa-2x"></i>
-                      </a>
-                    </li>
-                    <li class="contact__icons">
-                      <a
-                        href="https://www.instagram.com/vandy.ilustra/"
-                        target="_blank"
-                      >
-                        <i class="fab fa-instagram fa-2x"></i>
-                      </a>
-                    </li>
-                  </ul>
+                  <ul></ul>
                 </div>
-                <div>
-                  <a href="#" class="btn btn-light button-ghost">
-                    Descarga mi CV
-                  </a>
-                </div>
+                <!-- <div>
+                  <a href="#" class="btn btn-active"> Descarga mi CV </a>
+                </div> -->
               </div>
             </div>
             <div class="col-12 col-lg-4 mr-5">
@@ -166,7 +113,7 @@
         <div class="container skills__container">
           <div class="tech__skills">
             <div class="design__skills">
-              <h3 class="text-gradient-clip mb-5 text-center">Design</h3>
+              <h3 class="text-gradient-clip mb-5 text-center">Diseño</h3>
               <div class="design__icons">
                 <ul>
                   <li class="icons design__icons__item">
@@ -190,6 +137,9 @@
                   <li class="icons design__icons__item">
                     <img src="/image/zbrush-white-logo.png" alt="" />
                   </li>
+                  <li class="icons design__icons__item">
+                    <img src="/image/Substance-Logo.svg" alt="" />
+                  </li>
                 </ul>
               </div>
             </div>
@@ -209,9 +159,9 @@
                   <li class="icons tech__icons__item">
                     <img src="./image/bootstrap.svg" alt="" />
                   </li>
-                  <li class="icons tech__icons__item">
+                  <!-- <li class="icons tech__icons__item">
                     <img src="./image/react.svg" alt="" />
-                  </li>
+                  </li> -->
                   <li class="icons tech__icons__item">
                     <img src="./image/git-icon.svg" alt="" />
                   </li>
@@ -225,14 +175,8 @@
           <div class="soft__skills">
             <div class="soft__skills_text">
               <h3 class="mb-5 text-center">Soft Skills</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti numquam beatae, nemo saepe, rem vel molestias quasi
-                perspiciatis, aut maiores architecto tempora ut minima vitae!
-                Consequatur magnam ex delectus beatae!
-              </p>
+              <div class="soft__skills__icons">
             </div>
-            <div class="soft__skills__icons">
               <ul>
                 <li class="icons softskills__icons__item">
                   <i class="fas fa-folder"></i>
@@ -267,77 +211,23 @@
       <!------ PROJECTS ------>
       <section class="projects padding-y" id="projects">
         <h2 class="section-title">Proyectos</h2>
-        <div class="projects__filter">
-          <button class="filter__button btn">All</button>
-          <button class="filter__button btn">3D Art</button>
-          <button class="filter__button btn">Web Dev</button>
-          <button class="filter__button btn">Design</button>
-        </div>
+        <div class="projects__filter"></div>
         <div class="container projects__container">
           <div class="project__item">
             <div class="project__image">
               <img
-                src="https://placehold.co/556x282"
-                alt=""
+                src="${project.image}"
+                alt="${project.title}"
                 class="image-project"
               />
-              <a href="" class="project__link">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <a href="${project.href}" rel="noopener noreferrer" target"_blank" class="project__link">
+                <i class="fas fa-external-link-square-alt"></i>
               </a>
             </div>
             <div class="project__info">
-              <small>3D Art</small>
-              <h4 class="project__title">Project 1</h4>
-              <p class="project__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                itaque autem esse illum harum similique explicabo minus
-                voluptates ipsa fuga officia provident cupiditate natus fugit
-                quasi cum vitae. Dignissimos, ex?
-              </p>
-            </div>
-          </div>
-          <div class="project__item">
-            <div class="project__image">
-              <img
-                src="https://placehold.co/556x282"
-                alt=""
-                class="image-project"
-              />
-              <a href="" class="project__link">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="project__info">
-              <small>Web Dev</small>
-              <h4 class="project__title">Project 1</h4>
-              <p class="project__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                itaque autem esse illum harum similique explicabo minus
-                voluptates ipsa fuga officia provident cupiditate natus fugit
-                quasi cum vitae. Dignissimos, ex?
-              </p>
-            </div>
-          </div>
-          <div class="project__item">
-            <div class="project__image">
-              <img
-                src="https://placehold.co/556x282"
-                alt=""
-                class="image-project"
-              />
-              <a href="" class="project__link">
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-              </a>
-            </div>
-            <div class="project__info">
-              <small>Design</small>
-              <h4 class="project__title">Project 1</h4>
-              <p class="project__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-                itaque autem esse illum harum similique explicabo minus
-                voluptates ipsa fuga officia provident cupiditate natus fugit
-                quasi cum vitae. Dignissimos, ex?
-              </p>
+              <small>${project.category}</small>
+              <h4 class="project__title">${project.title}</h4>
+              <button class="btn btn-ghost">Ver proyecto</button>
             </div>
           </div>
         </div>
@@ -347,15 +237,15 @@
       <!------ EXPERIENCE ------>
 
       <section class="experience padding-y" id="experience">
-        <h2 class="section-title">Experience</h2>
+        <h2 class="section-title">Experiencia</h2>
         <div class="experience__container container">
           <div class="experience__item">
             <span class="experience__date">2017 - 2023</span>
-            <h4 class="experience__title">Web Developer</h4>
+            <h4 class="experience__title">Web Developer & Graphic Designer</h4>
             <p class="experience__company">Pixelab Soluciones Creativas</p>
           </div>
           <div class="experience__item">
-            <span class="experience__date">2017 - 2023</span>
+            <span class="experience__date">2016 - 2017</span>
             <h4 class="experience__title">Designer</h4>
             <p class="experience__company">MiPC Comunicaciones</p>
           </div>
@@ -374,40 +264,9 @@
 
       <footer class="contact-footer">
         <div class="container">
-          <div class="social-links text-center">
-            <p>
-              <i class="fas fa-envelope me-2"></i> contacto.ivanchr@gmail.com
-            </p>
-            <ul class="d-flex justify-content-center align-items-center">
-              <li class="contact__icons">
-                <a href="https://www.artstation.com/vandy" target="_blank">
-                  <i class="fab fa-artstation fa-2x"></i>
-                </a>
-              </li>
-              <li class="contact__icons">
-                <a
-                  href="https://www.linkedin.com/in/ivanchavezr/"
-                  target="_blank"
-                >
-                  <i class="fab fa-linkedin fa-2x"></i>
-                </a>
-              </li>
-              <li class="contact__icons">
-                <a href="https://www.behance.net/IvanChavez" target="_blank">
-                  <i class="fab fa-behance-square fa-2x"></i>
-                </a>
-              </li>
-              <li class="contact__icons">
-                <a href="https://github.com/Vanddy" target="_blank">
-                  <i class="fab fa-github fa-2x"></i>
-                </a>
-              </li>
-              <li class="contact__icons">
-                <a href="https://www.instagram.com/vandy.3d" target="_blank">
-                  <i class="fab fa-instagram fa-2x"></i>
-                </a>
-              </li>
-            </ul>
+          <div class="socialLinks text-center">
+            <p class="email"></p>
+            <ul></ul>
           </div>
         </div>
       </footer>
@@ -415,13 +274,12 @@
         <i class="fa fa-arrow-up"></i>
       </button>
     </main>
-    <script src="scripts/scripts.js"></script>
+    <script type="module" src="scripts/scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="scripts/swiperInit.js"></script>
   </body>
 </html>
