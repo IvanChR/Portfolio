@@ -2,8 +2,8 @@
   "menu": ["Bio", "Skills", "Proyectos", "Experiencia"],
   "data": {
     "name": "Iván Chávez",
-    "profesion": " Diseñador UI/Desarrollador Web",
-    "info": "Soy un diseñador gráfico enfocado en el desarrollo Frontend. Cuento con más de 7 años de experiencia en el área de diseño y 3 en el área del Frontend con una fuerte base técnica en HTML, CSS y Javascript. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
+    "profesion": " Artista 3D | Frontend Developer | Diseñador UI",
+    "info": "Soy un diseñador gráfico enfocado en el desarrollo Frontend. Cuento con más de 7 años de experiencia en el área de diseño y 4 en el área del Frontend con una fuerte base técnica en HTML, CSS y Javascript. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
     "emailIcon": "<i class='fas fa-envelope me-2'></i>",
     "email": "contacto.ivanchr@gmail.com"
   },
