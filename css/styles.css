@@ -472,11 +472,37 @@ section {
 }
 @media (480px < width < 768px) {
   .about__description {
-    background: red;
+    order: 2;
+    margin-top: 3rem;
   }
 }
-@media (768px < width < 992px) {
-  .about__description {
-    background: red;
+@media (width < 992px) {
+  :root {
+    --padding-y: 75px;
+  }
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+  .skills .skills__container {
+    flex-direction: column;
+  }
+  .skills .skills__container .tech__skills,
+  .skills .skills__container .soft__skills {
+    width: 100%;
+  }
+  .projects .projects__container {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .projects .projects__container .project__item .project__image {
+    min-height: unset;
+  }
+  .projects .projects__container .project__item .project__image .image-project {
+    position: relative;
+    translate: 0;
+    left: 0;
+    width: 100%;
+  }
+  .projects .projects__container .project__item .project__info .project__title {
+    font-size: 24px;
   }
 }/*# sourceMappingURL=styles.css.map */

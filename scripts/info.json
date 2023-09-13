@@ -1,9 +1,9 @@
 {
-  "menu": ["About me", "Skills", "Projects", "Experience"],
+  "menu": ["Bio", "Skills", "Proyectos", "Experiencia"],
   "data": {
     "name": "Iván Chávez",
     "profesion": " Diseñador UI/Desarrollador Web",
-    "info": "Soy un diseñador gráfico enfocado en el desarrollo frontend. Cuento con más de 7 años de experiencia en el área de diseño y 3 en el área del desarrollo web con una fuerte base técnica en HTML, CSS y Javascript. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
+    "info": "Soy un diseñador gráfico enfocado en el desarrollo Frontend. Cuento con más de 7 años de experiencia en el área de diseño y 3 en el área del Frontend con una fuerte base técnica en HTML, CSS y Javascript. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
     "emailIcon": "<i class='fas fa-envelope me-2'></i>",
     "email": "contacto.ivanchr@gmail.com"
   },
@@ -36,20 +36,20 @@
   ],
   "experience": [
     {
-      "title": "Web Developer",
+      "title": "Desarrollador web y Diseñador",
       "company": "Pixelab Soluciones Creativas",
       "date": "2017 - 2023",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, itaque autem esse illum harum similique explicabo minus voluptates ipsa fuga officia provident cupiditate natus fugit quasi cum vitae. Dignissimos, ex?"
     },
     {
-      "title": "Designer",
+      "title": "Diseñador",
       "company": "MiPC Comunicaciones",
       "date": "2016 - 2017 ",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, itaque autem esse illum harum similique explicabo minus voluptates ipsa fuga officia provident cupiditate natus fugit quasi cum vitae. Dignissimos, ex?"
     },
     {
       "id": 3,
-      "title": "Designer",
+      "title": "Diseñador",
       "company": "Creatura Comunicación",
       "date": "2015",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, itaque autem esse illum harum similique explicabo minus voluptates ipsa fuga officia provident cupiditate natus fugit quasi cum vitae. Dignissimos, ex?"
@@ -59,82 +59,102 @@
     {
       "id": "1",
       "title": "East Bridge Diorama",
-      "category": "3D art",
+      "category": "Arte 3D",
       "image": "./image/projects/portfolio_diorama.jpg",
       "text": "Concept art by Julia kovalyova, rinmaho on Artstation",
-      "link": "https://www.artstation.com/artwork/49kYd8"
+      "link": "",
+      "artstation": "https://www.artstation.com/artwork/49kYd8",
+      "behance": "https://www.behance.net/gallery/177411235/Bridge-3D-Diorama"
     },
     {
       "id": "2",
       "title": "Clover AV Group",
-      "category": "Web Development",
+      "category": "Desarrollo web",
       "image": "./image/projects/portfolio_web_clover.jpg",
-      "text": "UI Design and web development for clover av group. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/169118223/Clover-Av-Group-Web-Design"
+      "text": "UI Design and Desarrollo web for clover av group. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118223/Clover-Av-Group-Web-Design"
     },
     {
       "id": "3",
       "title": "Ius Violeta Logo",
-      "category": "Design",
+      "category": "Diseño",
       "image": "./image/projects/portfolio_design_ius_violetas.jpg",
       "text": "Logo design for ius violeta collective",
-      "link": "https://www.behance.net/gallery/172455567/Logotipo-Ius-Violetas"
+      "link": "",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/172455567/Logotipo-Ius-Violetas"
     },
     {
       "id": "4",
       "title": "Zelda Fanart",
-      "category": "3D art",
+      "category": "Arte 3D",
       "image": "./image/projects/portfolio_3D_zelda.jpg",
       "text": "Zelda 3D Model fanart from the videogame Zelda:Tears of the kingdom ",
-      "link": "https://www.artstation.com/artwork/Jvk8nD"
+      "link": "",
+      "artstation": "https://www.artstation.com/artwork/Jvk8nD",
+      "behance": "https://www.behance.net/gallery/177411923/Princess-Zelda-3D-Fanart"
     },
     {
       "id": "5",
       "title": "Bull kimik",
-      "category": "Web Development",
+      "category": "Desarrollo web",
       "image": "./image/projects/portfolio_web_bullkimik.jpg",
-      "text": "UI Design and web development for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/169118017/Bull-Kimik-Web-Design"
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "https://bullkimik.com/",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118017/Bull-Kimik-Web-Design"
     },
     {
       "id": "6",
       "title": "Doroteo",
-      "category": "Web Development",
+      "category": "Desarrollo web",
       "image": "./image/projects/portfolio_web_doroteo.jpg",
-      "text": "UI Design and web development for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/169118349/Doroteo-Web-Design"
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118349/Doroteo-Web-Design"
     },
     {
       "id": "7",
       "title": "GPS Ubicacion",
-      "category": "Web Development",
+      "category": "Desarrollo web",
       "image": "./image/projects/portfolio_web_gpsubicacion.jpg",
-      "text": "UI Design and web development for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/169118521/GPS-Ubicacion-Web-Design"
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "https://gpsubicacion.com/",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118521/GPS-Ubicacion-Web-Design"
     },
     {
       "id": "8",
       "title": "Kardagar",
-      "category": "Web Development",
+      "category": "Desarrollo web",
       "image": "./image/projects/portfolio_web_kardagar.jpg",
-      "text": "UI Design and web development for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/169118673/Kardagar-Web-Design"
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "https://kardashop.mx/",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118673/Kardagar-Web-Design"
     },
     {
       "id": "9",
       "title": "Purple Overlay",
-      "category": "Design",
+      "category": "Diseño",
       "image": "./image/projects/purple-stream-overlay.png",
-      "text": "UI Design and web development for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/158897845/Purple-Stream-Overlay-Pack"
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/158897845/Purple-Stream-Overlay-Pack"
     },
     {
       "id": "10",
       "title": "Pastel Pink Overlay",
-      "category": "Design",
+      "category": "Diseño",
       "image": "./image/projects/pastel-pink-overlay.jpg",
-      "text": "UI Design and web development for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://www.behance.net/gallery/177018995/Pastel-overlay-Package"
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/177018995/Pastel-overlay-Package"
     }
   ]
 }
