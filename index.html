@@ -3,7 +3,7 @@
   <head>
     <title>Iv&aacute;n Ch&aacute;vez Portfolio</title>
     <meta name="title" content="Iv&aacute;n Ch&aacute; Portfolio" />
-    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
     <meta name="description" content="" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -26,55 +26,52 @@
     <main class="main-container">
       <div class="ellipse-1"></div>
 
-      <header class="navbar">
-        <div class="container">
-          <div class="navbar__logo">
-            <img
-              src="./image/marca_2020_blanco.svg"
-              class="img-fluid d-block mx-auto"
-              alt="logo_home"
-            />
-          </div>
-
-          <nav class="navbar-expand-lg">
-            <div class="container">
-              <button
-                class="navbar-toggler text-white"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar__list ms-auto">
-                  <li class="navbar__listItem text-white">
-                    <a href="#about">Bio</a>
-                  </li>
-                  <li class="navbar__listItem text-white">
-                    <a href="#skills">Skills</a>
-                  </li>
-                  <li class="navbar__listItem text-white">
-                    <a href="#projects">Proyectos</a>
-                  </li>
-                  <li class="navbar__listItem text-white">
-                    <a href="#experience">Experiencia</a>
-                  </li>
-                </ul>
-              </div>
+      <header class="navbar navbar-dark">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="navbar__logo">
+              <img
+                src="./image/marca_2020_blanco.svg"
+                class="img-fluid d-block mx-auto"
+                alt="logo_home"
+              />
             </div>
-          </nav>
-        </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarTogglerDemo02"
+              aria-controls="navbarTogglerDemo02"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar__list ms-auto">
+                <li class="navbar__listItem text-white">
+                  <a href="#about">Bio</a>
+                </li>
+                <li class="navbar__listItem text-white">
+                  <a href="#skills">Skills</a>
+                </li>
+                <li class="navbar__listItem text-white">
+                  <a href="#projects">Proyectos</a>
+                </li>
+                <li class="navbar__listItem text-white">
+                  <a href="#experience">Experiencia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="container"></div>
       </header>
       <!------ ABOUT ------>
       <section class="about padding-y" id="about">
         <div class="container">
-          <div
-            class=" row justify-content-between align-items-center"
-          >
+          <div class="row justify-content-between align-items-center">
             <div class="about__description col-12 col-lg-6">
               <div class="about__description__title">
                 <h1 class="about__name uppercase fw-800"></h1>
@@ -95,7 +92,7 @@
                 </div> -->
               </div>
             </div>
-            <div class=" about__image col-12 col-lg-4 mr-5">
+            <div class="about__image col-12 col-lg-4 mr-5">
               <img
                 src="./image/image_home_masked.png"
                 class="mx-auto d-block img-fluid"
@@ -175,9 +172,8 @@
           </div>
           <div class="soft__skills">
             <div class="soft__skills_text">
-              <h3 class="mb-5 text-center">Soft Skills</h3>
-              <div class="soft__skills__icons">
-            </div>
+              <h3 class="mb-5 text-center">Habilidades Personales</h3>
+              <div class="soft__skills__icons"></div>
               <ul>
                 <li class="icons softskills__icons__item">
                   <i class="fas fa-folder"></i>
@@ -216,18 +212,19 @@
         <div class="container projects__container">
           <div class="project__item">
             <div class="project__image">
-              <img
-                src="${project.image}"
-                alt="${project.title}"
-                class="image-project"
-              />
-              <a href="${project.href}" rel="noopener noreferrer" target"_blank" class="project__link">
+              <img src="#" alt="#" class="image-project" />
+              <a
+                href="#"
+                rel="noopener noreferrer"
+                target="_blank"
+                class="project__link"
+              >
                 <i class="fas fa-external-link-square-alt"></i>
               </a>
             </div>
             <div class="project__info">
-              <small>${project.category}</small>
-              <h4 class="project__title">${project.title}</h4>
+              <small>subtitulo muestra</small>
+              <h4 class="project__title">Titulo muestra</h4>
               <button class="btn btn-ghost">Ver proyecto</button>
             </div>
           </div>
@@ -242,17 +239,17 @@
         <div class="experience__container container">
           <div class="experience__item">
             <span class="experience__date">2017 - 2023</span>
-            <h4 class="experience__title">Web Developer & Graphic Designer</h4>
+            <h4 class="experience__title">Desarrollador web & Diseñador</h4>
             <p class="experience__company">Pixelab Soluciones Creativas</p>
           </div>
           <div class="experience__item">
             <span class="experience__date">2016 - 2017</span>
-            <h4 class="experience__title">Designer</h4>
+            <h4 class="experience__title">Diseñador</h4>
             <p class="experience__company">MiPC Comunicaciones</p>
           </div>
           <div class="experience__item">
             <span class="experience__date">2015</span>
-            <h4 class="experience__title">Designer</h4>
+            <h4 class="experience__title">Diseñador</h4>
             <p class="experience__company">Creatura Comunicacion</p>
           </div>
           <!-- <div class="text-center">
@@ -271,7 +268,7 @@
           </div>
         </div>
       </footer>
-      <button class="goUp" >
+      <button class="goUp">
         <i class="fa fa-arrow-up"></i>
       </button>
     </main>

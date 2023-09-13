@@ -16,8 +16,7 @@ displayFilterProjects()
 
 // Imprime en pantalla la información de Aboutme
 function displayInfo() {
-
-  name.innerHTML = info?.data?.name
+  name.innerHTML = info?.data?.name ?? "Nombre"
   profesion.innerHTML = info?.data?.profesion
   abouMeInfo.innerHTML = info?.data?.info
   emails.forEach(email => email.innerHTML = `${info?.data?.emailIcon} ${info?.data?.email}`)
@@ -25,23 +24,19 @@ function displayInfo() {
 
 // Imprime en pantalla los iconos de redes sociales
 function displaySocialLink() {
-  const icons = info.contact.map(icon => {
-    return (
-      `<li class="contact__icons">
-                <a href="${icon.href}" target="_blank" rel="noopener noreferrer">
-                    ${icon.icon}
-                </a>
-            </li>`
-    )
-  }).join("")
+  const icons = info.contact.map(icon =>
+    `<li class="contact__icons">
+            <a href="${icon.href}" target="_blank" rel="noopener noreferrer">
+                ${icon.icon}
+            </a>
+       </li>`
+  ).join("")
 
   return contactIcons.forEach(contact => contact.innerHTML = icons)
 }
 
 function displayFilterProjects() {
   const categories = info.projects.reduce((values, item) => {
-
-
     if (!values.includes(item.category)) {
       values.push(item.category)
     }
@@ -50,9 +45,7 @@ function displayFilterProjects() {
 
   const btnsFilter = categories.map(btnCategory => {
     return (
-      `
-      <button class="filter__button btn btn-ghost" type="button" data-id="${btnCategory}">${btnCategory}</button>
-      `
+      `<button class="filter__button btn btn-ghost" type="button" data-id="${btnCategory}">${btnCategory}</button>`
     )
   }).join("")
 
@@ -61,9 +54,8 @@ function displayFilterProjects() {
   // Guarda los botones de filtro en una constante
   const filterButtons = document.querySelectorAll(".filter__button")
 
-
-
   filterButtons[0].classList.add("active")
+
   filterButtons.forEach(button => {
     button.addEventListener("click", (e) => {
       const category = e.currentTarget.dataset.id
@@ -71,33 +63,31 @@ function displayFilterProjects() {
       removeActiveClass(filterButtons)
       button.classList.add("active")
 
+      // Comprueba primero si está mostrando los elementos antes de procesar los filtrados
+      if (category === "All") {
+        displayProjects(allProjects)
+        return
+      }
+
       const projectsCategory = info.projects.filter(project => {
         if (project.category === category) {
           return project
         }
       })
 
-      if (category === "All") {
-        displayProjects(allProjects)
-      } else {
-        displayProjects(projectsCategory)
-      }
-
+      displayProjects(projectsCategory)
 
     })
   })
-
 }
-
-
 
 // Imprime los proyectos en pantalla
 function displayProjects(projectItems) {
-  let projects = projectItems.map(project => {
-    return (
+  const webIcon = `<i class="fas fa-2x fa-globe"></i>`;
+  const isDisplayNone = document.querySelector(".btn-ghost").classList.add(".d-none")
 
-      `
-            <div class="project__item">
+  let projects = projectItems.map(project =>
+    `<div class="project__item">
             <div class="project__image">
               <img
                 src="${project.image}"
@@ -108,35 +98,40 @@ function displayProjects(projectItems) {
             <div class="project__info">
               <small>${project.category}</small>
               <h4 class="project__title">${project.title}</h4>
-              <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost"> Ver proyecto </a>
-            </div>
-          </div>
-            `
-    )
-  }).join("")
+
+              ${project.link
+      ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost me-2"> ${webIcon} </a>`
+      : ""}
+              
+              ${project.artstation
+      ? `<a href="${project.artstation}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost me-2"> ${info.contact[0].icon} </a>`
+      : ""}
+              
+              ${project.behance
+      ? `<a href="${project.behance}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost me-2"> ${info.contact[2].icon} </a>`
+      : ""}
+
+            </div >
+          </div > `
+  ).join("")
 
   projectContainer.innerHTML = projects
 }
 
 function removeActiveClass(items) {
-
   items.forEach(item => {
     item.classList.remove("active")
   })
-
 }
-
 
 const goUp = document.querySelector(".goUp")
 goUp.addEventListener("click", scrollToTop)
 
-
 function scrollToTop() {
   const rootElement = document.documentElement
-
   rootElement.scrollTo({
     top: 0,
     behavior: "smooth"
   })
-
+  // rootElement.scrollTo(0,0)
 }
