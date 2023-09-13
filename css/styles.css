@@ -221,7 +221,7 @@ section {
 }
 .about .about__description .about__description__title h5 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .about .about__description .about__contact {
   display: flex;
