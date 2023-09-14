@@ -366,6 +366,7 @@ section {
     display: flex;
     gap: 16px;
     margin-bottom: 5rem;
+    padding: 0.75rem 1.25rem;
     .filter__button {
       font-size: 16px;
       color: white;
@@ -561,14 +562,28 @@ section {
   .skills .skills__container {
     flex-direction: column;
   }
-  .skills .skills__container .tech__skills,
-  .skills .skills__container .soft__skills {
-    width: 100%;
+  .skills {
+    .skills__container {
+      .tech__skills,
+      .soft__skills {
+        width: 100%;
+      }
+      .soft__skills {
+        ul {
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+      }
+    }
   }
 
   .projects {
+    .projects__filter {
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
     .projects__container {
-      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
       .project__item {
         .project__image {
           min-height: unset;
