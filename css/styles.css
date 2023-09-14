@@ -318,6 +318,7 @@ section {
   display: flex;
   gap: 16px;
   margin-bottom: 5rem;
+  padding: 0.75rem 1.25rem;
 }
 .projects .projects__filter .filter__button {
   font-size: 16px;
@@ -490,8 +491,15 @@ section {
   .skills .skills__container .soft__skills {
     width: 100%;
   }
-  .projects .projects__container {
+  .skills .skills__container .soft__skills ul {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .projects .projects__filter {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .projects .projects__container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
   .projects .projects__container .project__item .project__image {
     min-height: unset;

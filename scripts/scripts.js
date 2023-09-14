@@ -1,25 +1,25 @@
-import info from "./info.json" assert {type: 'json'}
+import info from "./info.json" assert {type: 'json'};
 
-const name = document.querySelector(".about__name")
-const profesion = document.querySelector(".about__position")
-const abouMeInfo = document.querySelector(".about__description__text p")
-const emails = document.querySelectorAll(".socialLinks .email")
-const contactIcons = document.querySelectorAll(".socialLinks ul")
-const projectContainer = document.querySelector(".projects__container")
-const filterProjects = document.querySelector(".projects__filter")
-const allProjects = info.projects
+const name = document.querySelector(".about__name");
+const profesion = document.querySelector(".about__position");
+const abouMeInfo = document.querySelector(".about__description__text p");
+const emails = document.querySelectorAll(".socialLinks .email");
+const contactIcons = document.querySelectorAll(".socialLinks ul");
+const projectContainer = document.querySelector(".projects__container");
+const filterProjects = document.querySelector(".projects__filter");
+const allProjects = info.projects;
 
-displayInfo()
-displaySocialLink()
-displayProjects(allProjects)
-displayFilterProjects()
+displayInfo();
+displaySocialLink();
+displayProjects(allProjects);
+displayFilterProjects();
 
 // Imprime en pantalla la información de Aboutme
 function displayInfo() {
-  name.innerHTML = info?.data?.name ?? "Nombre"
-  profesion.innerHTML = info?.data?.profesion
-  abouMeInfo.innerHTML = info?.data?.info
-  emails.forEach(email => email.innerHTML = `${info?.data?.emailIcon} ${info?.data?.email}`)
+  name.innerHTML = info?.data?.name ?? "Iván Chávez";
+  profesion.innerHTML = info?.data?.profesion ?? "Artista 3D | Frontend Developer | Diseñador UI";
+  abouMeInfo.innerHTML = info?.data?.info ?? "Soy un Artista 3D, Desarrollador frontend y Diseñador gráfico con más de 7 años de experiencia en diseño y 4 en desarrollo frontend.";
+  emails.forEach(email => email.innerHTML = `${info?.data?.emailIcon} ${info?.data?.email ?? "contacto.ivanchr@gmail.com"}`);
 }
 
 // Imprime en pantalla los iconos de redes sociales
@@ -52,9 +52,9 @@ function displayFilterProjects() {
   filterProjects.innerHTML = btnsFilter
 
   // Guarda los botones de filtro en una constante
-  const filterButtons = document.querySelectorAll(".filter__button")
+  const filterButtons = document.querySelectorAll(".filter__button");
 
-  filterButtons[0].classList.add("active")
+  filterButtons[0].classList.add("active");
 
   filterButtons.forEach(button => {
     button.addEventListener("click", (e) => {
@@ -113,7 +113,7 @@ function displayProjects(projectItems) {
 
             </div >
           </div > `
-  ).join("")
+  ).join("");
 
   projectContainer.innerHTML = projects
 }
@@ -124,7 +124,7 @@ function removeActiveClass(items) {
   })
 }
 
-const goUp = document.querySelector(".goUp")
+const goUp = document.querySelector(".goUp");
 goUp.addEventListener("click", scrollToTop)
 
 function scrollToTop() {
