@@ -6,13 +6,17 @@ const abouMeInfo = document.querySelector(".about__description__text p");
 const emails = document.querySelectorAll(".socialLinks .email");
 const contactIcons = document.querySelectorAll(".socialLinks ul");
 const projectContainer = document.querySelector(".projects__container");
+const experienceContainer = document.querySelector(".experience__container");
 const filterProjects = document.querySelector(".projects__filter");
 const allProjects = info.projects;
+const experience = info.experience
+
 
 displayInfo();
 displaySocialLink();
 displayProjects(allProjects);
-displayFilterProjects();
+displayExperience(experience);
+// displayFilterProjects();
 
 // Imprime en pantalla la información de Aboutme
 function displayInfo() {
@@ -81,7 +85,27 @@ function displayFilterProjects() {
   })
 }
 
-// Imprime los proyectos en pantalla
+// Imprime la experience
+function displayExperience(experienceItems) {
+  let experienceHistory = experienceItems.map(experienceCard =>
+    `<div class="experience__item">
+          <div class="experience__header">
+            <span class="experience__date">${experienceCard.date}</span>
+            <h4 class="experience__title">${experienceCard.title}</h4>
+            <p class="experience__company">${experienceCard.company}</p>
+          </div>
+          <div class="experience__description">
+            <p class="experience__company">${experienceCard.description}</p>
+          </div>
+
+          </div>`
+  ).join("");
+
+  experienceContainer.innerHTML = experienceHistory
+}
+
+
+
 function displayProjects(projectItems) {
   const webIcon = `<i class="fas fa-2x fa-globe"></i>`;
   const isDisplayNone = document.querySelector(".btn-ghost").classList.add(".d-none")
