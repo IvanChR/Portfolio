@@ -1,4 +1,4 @@
-import info from "./info.json" assert {type: 'json'};
+import info from "./info.json" with {type: 'json'};
 
 const name = document.querySelector(".about__name");
 const profesion = document.querySelector(".about__position");
