@@ -1,4 +1,4 @@
-import info from "./info.json" assert {type: 'json'};
+import info from "./info.json" with {type: 'json'};
 
 const name = document.querySelector(".about__name");
 const profesion = document.querySelector(".about__position");
@@ -42,13 +42,12 @@ function displayFilterProjects() {
     }
     return values
   }, ["All"])
-
   const btnsFilter = categories.map(btnCategory => {
     return (
       `<button class="filter__button btn btn-ghost" type="button" data-id="${btnCategory}">${btnCategory}</button>`
-    )
-  }).join("")
-
+      )
+    }).join("")
+    
   filterProjects.innerHTML = btnsFilter
 
   // Guarda los botones de filtro en una constante
