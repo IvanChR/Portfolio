@@ -6,11 +6,8 @@
   <meta name="title" content="Iv&aacute;n Ch&aacute; Portfolio" />
   <meta name="viewport" content="initial-scale=1, width=device-width" />
   <meta name="description" content="" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link href="./fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
@@ -18,64 +15,58 @@
   <main class="main-container">
     <div class="ellipse-1"></div>
 
-    <header class="navbar navbar-dark">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <div class="navbar__logo">
-            <img src="./image/marca_2020_blanco.svg" class="img-fluid d-block mx-auto" alt="logo_home" />
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mb-2 mb-lg-0 navbar__list ms-auto">
-              <li class="navbar__listItem text-white">
-                <a href="#about">Bio</a>
-              </li>
-              <li class="navbar__listItem text-white">
-                <a href="#skills">Skills</a>
-              </li>
-              <li class="navbar__listItem text-white">
-                <a href="#projects">Proyectos</a>
-              </li>
-              <li class="navbar__listItem text-white">
-                <a href="#experience">Experiencia</a>
-              </li>
-            </ul>
-          </div>
+    <header class="container w-2/3 mx-auto my-5">
+      <nav class="flex w-full justify-between">
+        <div class="navbar__logo">
+          <img src="./image/marca_2020_blanco.svg" class="img-fluid d-block mx-auto" alt="logo_home" />
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mb-2 mb-lg-0 navbar__list ms-auto">
+            <li class="navbar__listItem text-white">
+              <a href="#about">Bio</a>
+            </li>
+            <li class="navbar__listItem text-white">
+              <a href="#skills">Skills</a>
+            </li>
+            <li class="navbar__listItem text-white">
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li class="navbar__listItem text-white">
+              <a href="#experience">Experiencia</a>
+            </li>
+          </ul>
         </div>
       </nav>
-
-      <div class="container"></div>
     </header>
     <!------ ABOUT ------>
     <section class="about padding-y" id="about">
-      <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="about__description col-12 col-lg-6">
-            <div class="about__description__title">
-              <h1 class="about__name uppercase fw-800"></h1>
-              <h5 class="about__position text-gradient-clip fw-300"></h5>
+      <div class="container w-2/3 grid grid-cols-1 md:grid-cols-2">
+        <div class="about__description flex-auto ">
+          <div class="about__description__title">
+            <h1 class="about__name fw-800"></h1>
+            <h5 class="about__position text-gradient-clip fw-300"></h5>
+          </div>
+          <div class="about__description__text mt-4">
+            <p></p>
+          </div>
+          <div class="about__contact">
+            <div class="socialLinks">
+              <p class="mb-3 email">
+                <i class="fas fa-envelope"></i>
+              </p>
+              <ul></ul>
             </div>
-            <div class="about__description__text mt-4">
-              <p></p>
-            </div>
-            <div class="about__contact">
-              <div class="socialLinks">
-                <p class="mb-3 email">
-                  <i class="fas fa-envelope"></i>
-                </p>
-                <ul></ul>
-              </div>
-              <!-- <div>
+            <!-- <div>
                   <a href="#" class="btn btn-active"> Descarga mi CV </a>
                 </div> -->
-            </div>
           </div>
-          <div class="about__image col-12 col-lg-4 mr-5">
-            <img src="./image/image_home_masked.png" class="mx-auto d-block img-fluid" />
-          </div>
+        </div>
+        <div class="about__image flex-auto">
+          <img src="./image/designer-developer-ivan-chavez.webp" class="mx-auto d-block img-fluid" />
         </div>
       </div>
     </section>
@@ -84,68 +75,85 @@
     <!------ SKILLS ------>
 
     <section class="skills padding-y" id="skills">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title">Habilidades</h2>
 
-      <div class="container skills__container">
+      <div class="container skills__container w-2/3">
         <div class="tech__skills">
-          <div class="design__skills">
-            <h3 class="text-gradient-clip mb-5 text-center">Diseño</h3>
-            <div class="design__icons">
-              <ul>
-                <li class="icons design__icons__item">
-                  <img src="/image/Photoshop-logo.svg" alt="Photoshop" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/Illustrator-logo.svg" alt="Illustrator" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/AfterEffects-logo.svg" alt="" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/Affinity-logo.svg" alt="" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/figma-logo.svg" alt="" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/maya-logo.svg" alt="" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/zbrush-white-logo.png" alt="" />
-                </li>
-                <li class="icons design__icons__item">
-                  <img src="/image/Substance-Logo.svg" alt="" />
-                </li>
-              </ul>
-            </div>
-          </div>
           <div class="dev__skills">
-            <h3 class="mb-5 text-center text-gradient-clip">Dev Skills</h3>
+            <h3 class="mb-0 text-center text-gradient-clip">Lenguajes y Frameworks</h3>
+            <hr>
             <div class="tech__icons">
               <ul>
                 <li class="icons tech__icons__item">
                   <img src="./image/html.svg" alt="" />
+                  <p>HTML</p>
                 </li>
                 <li class="icons tech__icons__item">
-                  <img src="./image/css.svg" alt="" />
+                  <img src="./image/Official_CSS_Logo.svg" alt="" />
+                  <p>CSS</p>
                 </li>
                 <li class="icons tech__icons__item">
                   <img src="./image/javascript.svg" alt="" />
-                </li>
-                <li class="icons tech__icons__item">
-                  <img src="./image/bootstrap.svg" alt="" />
-                </li>
-                <!-- <li class="icons tech__icons__item">
-                    <img src="./image/react.svg" alt="" />
-                  </li> -->
-                <li class="icons tech__icons__item">
-                  <img src="./image/git-icon.svg" alt="" />
-                </li>
-                <li class="icons tech__icons__item">
-                  <img src="./image/github-icon-white.svg" alt="" />
+                  <p>Javascript</p>
                 </li>
                 <li class="icons tech__icons__item">
                   <img src="./image/wordpress-blanco.svg" alt="" />
+                  <p>WordPress</p>
+                </li>
+                <li class="icons tech__icons__item">
+                  <img src="./image/bootstrap.svg" alt="" />
+                  <p>Bootstrap</p>
+                </li>
+                <!-- <li class="icons tech__icons__item">
+                  <img src="./image/react.svg" alt="" />
+                </li> -->
+                <li class="icons tech__icons__item">
+                  <img src="./image/git-icon.svg" alt="" />
+                  <p>GIT</p>
+                </li>
+                <li class="icons tech__icons__item">
+                  <img src="./image/github-icon-white.svg" alt="" />
+                  <p>GitHub</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="design__skills">
+            <h3 class="text-gradient-clip mb-0 text-center">Diseño</h3>
+            <hr>
+            <div class="design__icons">
+              <ul>
+                <li class="icons design__icons__item">
+                  <img src="/image/Photoshop-logo.svg" alt="Photoshop" />
+                  <p>Photoshop</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/Illustrator-logo.svg" alt="Illustrator" />
+                  <p>Illustrator</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/AfterEffects-logo.svg" alt="" />
+                  <p>After Effects</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/Affinity-logo.svg" alt="" />
+                  <p>Affinity Designer</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/figma-logo.svg" alt="" />
+                  <p>Figma</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/maya-logo.svg" alt="" />
+                  <p>Maya</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/zbrush-white-logo.png" alt="" />
+                  <p>ZBrush</p>
+                </li>
+                <li class="icons design__icons__item">
+                  <img src="/image/Substance-Logo.svg" alt="" />
+                  <p>Substance Painter</p>
                 </li>
               </ul>
             </div>
@@ -153,7 +161,8 @@
         </div>
         <div class="soft__skills">
           <div class="soft__skills_text">
-            <h3 class="mb-5 text-center">Habilidades Personales</h3>
+            <h3 class="mb-0 text-center">Habilidades Personales</h3>
+            <hr>
             <div class="soft__skills__icons"></div>
             <ul>
               <li class="icons softskills__icons__item">
@@ -193,18 +202,21 @@
     <!------ PROJECTS ------>
     <section class="projects padding-y" id="projects">
       <h2 class="section-title">Proyectos</h2>
-      <div class="container projects__container">
+      <div class=" projects__container grid grid-cols-1 md:grid-cols-3  w-2/3">
         <div class="project__item">
           <div class="project__image">
-            <img src="#" alt="#" class="image-project" />
+            <img src="./image/projects/portfolio_3D_zelda.jpg" alt="#" class="image-project" />
+          </div>
+          <div class="project__info">
+            <h4 class="project__title">Titulo muestra</h4>
+            <p class="project__description">Descripción</p>
+            <small>Tecnologías</small>
+          </div>
+          <div class="project__links">
+            <button class="btn btn-ghost">Ver proyecto</button>
             <a href="#" rel="noopener noreferrer" target="_blank" class="project__link">
               <i class="fas fa-external-link-square-alt"></i>
             </a>
-          </div>
-          <div class="project__info">
-            <small>subtitulo muestra</small>
-            <h4 class="project__title">Titulo muestra</h4>
-            <button class="btn btn-ghost">Ver proyecto</button>
           </div>
         </div>
       </div>
@@ -215,11 +227,16 @@
 
     <section class="experience padding-y" id="experience">
       <h2 class="section-title">Experiencia</h2>
-      <div class="experience__container container">
+      <div class="experience__container container w-2/3">
         <div class="experience__item">
-          <span class="experience__date">2017 - 2023</span>
-          <h4 class="experience__title">Desarrollador web & Diseñador</h4>
-          <p class="experience__company">Pixelab Soluciones Creativas</p>
+          <div class="experience__date">
+            <span class="">2017 - 2023</span>
+          </div>
+          <div class="experience__text">
+            <h4 class="experience__title">Desarrollador web & Diseñador</h4>
+            <small class="experience__company">Pixelab Soluciones Creativas</small>
+          </div>
+
         </div>
         <div class="experience__item">
           <span class="experience__date">2016 - 2017</span>

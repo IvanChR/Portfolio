@@ -88,17 +88,16 @@ function displayFilterProjects() {
 // Imprime la experience
 function displayExperience(experienceItems) {
   let experienceHistory = experienceItems.map(experienceCard =>
-    `<div class="experience__item">
-          <div class="experience__header">
-            <span class="experience__date">${experienceCard.date}</span>
-            <h4 class="experience__title">${experienceCard.title}</h4>
-            <p class="experience__company">${experienceCard.company}</p>
+    `<div class="experience__item flex-col md:flex-row">
+          <div class="experience__date">
+            <span class="text-left md:text-right">${experienceCard.date}</span>
           </div>
           <div class="experience__description">
-            <p class="experience__company">${experienceCard.description}</p>
+            <h4 class="experience__title">${experienceCard.title}</h4>
+            <p class="experience__company">${experienceCard.company}</p>
+            <p class="experience__text">${experienceCard.description}</p>
           </div>
-
-          </div>`
+     </div>`
   ).join("");
 
   experienceContainer.innerHTML = experienceHistory
@@ -107,36 +106,39 @@ function displayExperience(experienceItems) {
 
 
 function displayProjects(projectItems) {
-  const webIcon = `<i class="fas fa-2x fa-globe"></i>`;
+  const webIcon = `<i class="fas text-xl fa-globe"></i>`;
   const isDisplayNone = document.querySelector(".btn-ghost").classList.add(".d-none")
 
   let projects = projectItems.map(project =>
-    `<div class="project__item">
-            <div class="project__image">
-              <img
-                src="${project.image}"
-                alt="${project.title}"
-                class="image-project"
-              />
-            </div>
-            <div class="project__info">
-              <small>${project.category}</small>
-              <h4 class="project__title">${project.title}</h4>
-
-              ${project.link
-      ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost me-2"> ${webIcon} </a>`
+    `
+    <div class="project__item">
+          <div class="project__image">
+            <img src="${project.image}" 
+            alt="${project.title}"
+            class="image-project"/>
+          </div>
+          <div class="project__info">
+            <h4 class="project__title">${project.title}</h4>
+            <p class="project__description">Descripción</p>
+            <small>Tecnologías</small>
+          </div>
+          <div class="project__links">
+            ${project.link
+      ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost py-3 px-5 me-2 inline-block"> ${webIcon} </a>`
       : ""}
-              
-              ${project.artstation
-      ? `<a href="${project.artstation}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost me-2"> ${info.contact[0].icon} </a>`
+            ${project.artstation
+      ? `<a href="${project.artstation}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost py-3 px-5 me-2 inline-block"> ${info.contact[0].icon} </a>`
       : ""}
-              
-              ${project.behance
-      ? `<a href="${project.behance}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost me-2"> ${info.contact[2].icon} </a>`
+                    
+                    ${project.behance
+      ? `<a href="${project.behance}" target="_blank" rel="noopener noreferrer" class="btn btn-ghost py-3 px-5 me-2 inline-block"> ${info.contact[2].icon} </a>`
       : ""}
-
-            </div >
-          </div > `
+      <button class="btn btn-ghost py-3 px-5">Ver proyecto</button>
+            <a href="#" rel="noopener noreferrer" target="_blank" class="project__link">
+              <i class="fas fa-external-link-square-alt text-xl"></i>
+            </a>
+                </div>
+        </div>`
   ).join("");
 
   projectContainer.innerHTML = projects

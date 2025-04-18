@@ -9,7 +9,7 @@
   --bg-light-blue: #004a79;
   --bg-gray: #2a2d47;
   --bg-red: #6d0047;
-  --padding-y: 150px;
+  --padding-y: 4rem;
   --blue-pink-gradient: linear-gradient(90deg, #00a2ff, #ff00f0);
 }
 
@@ -171,7 +171,8 @@ section {
 .navbar {
   display: flex;
   width: 100%;
-  padding: 0.75rem 5rem;
+  max-width: 1400px;
+  margin: auto;
   justify-content: center;
 }
 .navbar .container {
@@ -242,7 +243,7 @@ section {
 }
 .about .about__image img {
   width: 100%;
-  max-height: 500px;
+  max-height: 615px;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -283,10 +284,16 @@ section {
 .skills .skills__container .icons {
   width: 100%;
   min-height: 50px;
-  background: linear-gradient(180deg, #2a2d47, transparent);
-  padding: 1rem;
+  /* background: linear-gradient(180deg, #2a2d47, transparent); */
+  padding: 1rem 0.5rem;
   border-radius: 12px;
   text-align: center;
+}
+.skills .skills__container .icons img {
+  margin-bottom: 1rem;
+}
+.skills .skills__container .icons p {
+  margin-bottom: 0;
 }
 .skills .skills__container .tech__skills ul {
   display: grid;
@@ -328,9 +335,12 @@ section {
   background-color: var(--blue);
 }
 .projects .projects__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 36px;
+}
+.projects .projects__container .project__item {
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 16px;
 }
 .projects .projects__container .project__item .project__image {
   position: relative;
@@ -341,6 +351,7 @@ section {
   background: linear-gradient(180deg, #2a2d47, transparent);
   margin-bottom: 16px;
   min-height: 230px;
+  border-radius: 12px;
 }
 .projects .projects__container .project__item .project__image .project__link {
   position: absolute;
@@ -353,24 +364,23 @@ section {
   border-radius: 6px;
 }
 .projects .projects__container .project__item .project__image .image-project {
-  width: 80%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 16/9;
-  position: absolute;
-  left: 50%;
-  translate: -50% 0;
-  bottom: 0;
+  border-radius: 12px;
+}
+.projects .projects__container .project__item .project__info {
+  margin-bottom: 1rem;
 }
 .projects .projects__container .project__item .project__info small {
   color: var(--blue);
   font-size: 18px;
 }
 .projects .projects__container .project__item .project__info .project__title {
-  font-size: 36px;
+  font-size: 24px;
   color: var(--red);
-  margin-bottom: 16px;
 }
 .projects .projects__container .project__item .project__info .project__text {
   line-height: 2rem;
@@ -383,37 +393,37 @@ section {
   align-items: center;
 }
 .experience .experience__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+  flex-direction: column;
   justify-content: space-evenly;
-  gap: 96px;
+  gap: 16px;
+  max-width: 1140px;
 }
 .experience .experience__container .experience__item {
+  display: flex;
   border-radius: 12px;
-  background: linear-gradient(180deg, #2a2d47, transparent);
+  /* background: linear-gradient(180deg, #2a2d47, transparent); */
   padding: 1.5rem;
-  gap: 8px;
-}
-.experience .experience__container .experience__item .experience__header {
-  min-height: 135px;
-  margin-bottom: 0.75rem;
+  gap: 16px;
 }
 .experience .experience__container .experience__item .experience__date {
   color: var(--blue);
   font-size: 1rem;
+  flex: 1 0 auto;
+  min-width: 120px;
 }
-.experience .experience__container .experience__item .experience__title {
+.experience .experience__container .experience__item .experience__description {
+  color: white;
+  line-height: 1.7rem;
+  flex: auto;
+}
+.experience .experience__container .experience__item .experience__description .experience__title {
   color: var(--red);
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 400;
   margin-bottom: 0;
 }
-.experience .experience__container .experience__item .experience__company {
-  color: var(--white);
-}
-.experience .experience__container .experience__item .experience__text {
-  color: #999;
-  line-height: 1.7rem;
+.experience .experience__container .experience__item .experience__description .experience__company {
+  color: #8b8b8b;
 }
 
 .contact-footer {
@@ -473,13 +483,15 @@ section {
     width: 100%;
   }
 }
-@media (width < 992px) {
-  :root {
-    --padding-y: 75px;
-  }
+@media (480px < width < 768px) {
   .about__description {
     order: 2;
     margin-top: 3rem;
+  }
+}
+@media (width < 992px) {
+  :root {
+    --padding-y: 75px;
   }
   .navbar {
     padding: 0.75rem 1rem;
@@ -499,7 +511,8 @@ section {
     flex-wrap: wrap;
   }
   .projects .projects__container {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    */
   }
   .projects .projects__container .project__item .project__image {
     min-height: unset;
@@ -511,6 +524,6 @@ section {
     width: 100%;
   }
   .projects .projects__container .project__item .project__info .project__title {
-    font-size: 24px;
+    font-size: 20px;
   }
 }

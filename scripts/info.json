@@ -3,7 +3,7 @@
   "data": {
     "name": "Iván Chávez",
     "profesion": " Artista 3D | Frontend Developer | Diseñador UI",
-    "info": "Soy un diseñador gráfico enfocado en el desarrollo Frontend. Cuento con más de 7 años de experiencia en el área de diseño y 4 en el área del Frontend con una fuerte base técnica en HTML, CSS y Javascript. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
+    "info": "Soy un diseñador gráfico enfocado en el diseño de interfaces para web y desarrollador front-end. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
     "emailIcon": "<i class='fas fa-envelope me-2'></i>",
     "email": "contacto.ivanchr@gmail.com"
   },
@@ -11,36 +11,41 @@
     {
       "name": "Artstation",
       "href": "https://www.artstation.com/ivanchr",
-      "icon": "<i class='fab fa-artstation fa-2x'></i>"
+      "icon": "<i class='fab fa-artstation text-xl'></i>"
     },
     {
       "name": "Linkedin",
       "href": "https://www.linkedin.com/in/ivanchavezr/",
-      "icon": "<i class='fab fa-linkedin fa-2x'></i>"
+      "icon": "<i class='fab fa-linkedin text-xl'></i>"
     },
     {
       "name": "Behance",
       "href": "https://www.behance.net/IvanChavez",
-      "icon": "<i class='fab fa-behance-square fa-2x'></i>"
+      "icon": "<i class='fab fa-behance-square text-xl'></i>"
     },
     {
       "name": "Github",
       "href": "https://github.com/IvanChR",
-      "icon": "<i class='fab fa-github fa-2x'></i>"
+      "icon": "<i class='fab fa-github text-xl'></i>"
     },
     {
       "name": "Instagram",
       "href": "https://www.instagram.com/vandy.3D/",
-      "icon": "<i class='fab fa-instagram fa-2x'></i>"
+      "icon": "<i class='fab fa-instagram text-xl'></i>"
     }
   ],
   "experience": [
     {
       "title": "Desarrollador web y Diseñador",
+      "company": "Colateral Marketing",
+      "date": "2023 - Presente",
+      "description": "Diseño de layouts. Desarrollo web con WordPress y Divi. Diseño y adaptación de imágenes para web. Gestión de contenidos con WordPress. Respaldo de páginas web, instalación y actualización de plugins."
+    },
+    {
+      "title": "Desarrollador web y Diseñador",
       "company": "Pixelab Soluciones Creativas",
       "date": "2017 - 2023",
-      "description":
-        "Diseño de UI. Desarrollo web con HTML, CSS y Javascript. Frameworks utilizados boostrap 4 y 5. Diseño y adaptación de imágenes para páginas web. El desarrollo web se hacia un CMS propio de la empresa estilo wordpress por lo que también hacia labores de gestión de contenido."
+      "description": "Diseño de UI. Desarrollo web con HTML, CSS y Javascript. Frameworks utilizados boostrap 4 y 5. Diseño y adaptación de imágenes para páginas web. El desarrollo web se hacia un CMS propio de la empresa estilo wordpress por lo que también hacia labores de gestión de contenido."
     },
     {
       "title": "Diseñador",
@@ -65,7 +70,8 @@
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "https://kardashop.mx/",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118673/Kardagar-Web-Design"
+      "behance": "https://www.behance.net/gallery/169118673/Kardagar-Web-Design",
+      "github": ""
     },
     {
       "id": "2",
@@ -75,7 +81,8 @@
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "https://bullkimik.com/",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118017/Bull-Kimik-Web-Design"
+      "behance": "https://www.behance.net/gallery/169118017/Bull-Kimik-Web-Design",
+      "github": ""
     },
     {
       "id": "3",
@@ -85,7 +92,8 @@
       "text": "UI Design and Desarrollo web for clover av group. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118223/Clover-Av-Group-Web-Design"
+      "behance": "https://www.behance.net/gallery/169118223/Clover-Av-Group-Web-Design",
+      "github": ""
     },
     {
       "id": "4",
@@ -95,7 +103,8 @@
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118349/Doroteo-Web-Design"
+      "behance": "https://www.behance.net/gallery/169118349/Doroteo-Web-Design",
+      "github": ""
     },
     {
       "id": "5",
@@ -105,7 +114,8 @@
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "https://gpsubicacion.com/",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118521/GPS-Ubicacion-Web-Design"
+      "behance": "https://www.behance.net/gallery/169118521/GPS-Ubicacion-Web-Design",
+      "github": ""
     }
   ]
 }
