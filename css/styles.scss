@@ -11,7 +11,7 @@
   --bg-gray: #2a2d47;
   --bg-red: #6d0047;
 
-  --padding-y: 150px;
+  --padding-y: 4rem;
   --blue-pink-gradient: linear-gradient(90deg, #00a2ff, #ff00f0);
 }
 
@@ -185,7 +185,8 @@ section {
 .navbar {
   display: flex;
   width: 100%;
-  padding: 0.75rem 5rem;
+  max-width: 1400px;
+  margin: auto;
   justify-content: center;
   .container {
     justify-content: space-between;
@@ -273,7 +274,7 @@ section {
   .about__image {
     img {
       width: 100%;
-      max-height: 500px;
+      max-height: 615px;
       height: auto;
       object-fit: contain;
     }
@@ -319,10 +320,16 @@ section {
     .icons {
       width: 100%;
       min-height: 50px;
-      background: linear-gradient(180deg, #2a2d47, transparent);
-      padding: 1rem;
+      /* background: linear-gradient(180deg, #2a2d47, transparent); */
+      padding: 1rem 0.5rem;
       border-radius: 12px;
       text-align: center;
+      img {
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 0;
+      }
     }
 
     .tech__skills {
@@ -377,11 +384,15 @@ section {
   }
 
   .projects__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    //display: grid;
+    //grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 36px;
 
     .project__item {
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 16px;
+
       .project__image {
         position: relative;
         border-radius: 12px;
@@ -391,7 +402,7 @@ section {
         background: linear-gradient(180deg, #2a2d47, transparent);
         margin-bottom: 16px;
         min-height: 230px;
-
+        border-radius: 12px;
         .project__link {
           position: absolute;
           right: 15px;
@@ -404,27 +415,24 @@ section {
         }
 
         .image-project {
-          width: 80%;
+          width: 100%;
           height: auto;
           object-fit: cover;
           aspect-ratio: 16/9;
-          position: absolute;
-          left: 50%;
-          translate: -50% 0;
-          bottom: 0;
+          border-radius: 12px;
         }
       }
 
       .project__info {
+        margin-bottom: 1rem;
         small {
           color: var(--blue);
           font-size: 18px;
         }
 
         .project__title {
-          font-size: 36px;
+          font-size: 24px;
           color: var(--red);
-          margin-bottom: 16px;
         }
 
         .project__text {
@@ -442,35 +450,39 @@ section {
   align-items: center;
 
   .experience__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(366px, 1fr));
+    flex-direction: column;
     justify-content: space-evenly;
-    gap: 96px;
+    gap: 16px;
+    max-width: 1140px;
 
     .experience__item {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
       border-radius: 12px;
-      background: linear-gradient(180deg, #2a2d47, transparent);
+      /* background: linear-gradient(180deg, #2a2d47, transparent); */
       padding: 1.5rem;
       gap: 16px;
 
       .experience__date {
         color: var(--blue);
         font-size: 1rem;
+        flex: 1 0 auto;
+
+        min-width: 120px;
       }
-      .experience__title {
-        color: var(--red);
-        font-size: 2rem;
-        font-weight: 700;
-      }
-      .experience__company {
-        color: var(--white);
-      }
-      .experience__text {
-        color: #999;
+      .experience__description {
+        color: white;
         line-height: 1.7rem;
+        flex: auto;
+
+        .experience__title {
+          color: var(--red);
+          font-size: 2rem;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+        .experience__company {
+          color: #8b8b8b;
+        }
       }
     }
   }
@@ -546,8 +558,7 @@ section {
 }
 
 @media (768px < width < 992px) {
-  .about__description {
-  }
+
 }
 
 @media (width < 992px) {
@@ -583,7 +594,8 @@ section {
     }
 
     .projects__container {
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ */
       .project__item {
         .project__image {
           min-height: unset;
@@ -597,7 +609,7 @@ section {
         }
         .project__info {
           .project__title {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
       }

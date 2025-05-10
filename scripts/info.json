@@ -3,7 +3,7 @@
   "data": {
     "name": "Iván Chávez",
     "profesion": " Artista 3D | Frontend Developer | Diseñador UI",
-    "info": "Soy un diseñador gráfico enfocado en el desarrollo Frontend. Cuento con más de 7 años de experiencia en el área de diseño y 4 en el área del Frontend con una fuerte base técnica en HTML, CSS y Javascript. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
+    "info": "Soy un diseñador gráfico enfocado en el diseño de interfaces para web y desarrollador front-end. Me encanta trabajar en proyectos desafiantes y estoy constantemente buscando nuevas formas de mejorar mis habilidades y conocimientos.",
     "emailIcon": "<i class='fas fa-envelope me-2'></i>",
     "email": "contacto.ivanchr@gmail.com"
   },
@@ -11,30 +11,36 @@
     {
       "name": "Artstation",
       "href": "https://www.artstation.com/ivanchr",
-      "icon": "<i class='fab fa-artstation fa-2x'></i>"
+      "icon": "<i class='fab fa-artstation text-xl'></i>"
     },
     {
       "name": "Linkedin",
       "href": "https://www.linkedin.com/in/ivanchavezr/",
-      "icon": "<i class='fab fa-linkedin fa-2x'></i>"
+      "icon": "<i class='fab fa-linkedin text-xl'></i>"
     },
     {
       "name": "Behance",
       "href": "https://www.behance.net/IvanChavez",
-      "icon": "<i class='fab fa-behance-square fa-2x'></i>"
+      "icon": "<i class='fab fa-behance-square text-xl'></i>"
     },
     {
       "name": "Github",
       "href": "https://github.com/IvanChR",
-      "icon": "<i class='fab fa-github fa-2x'></i>"
+      "icon": "<i class='fab fa-github text-xl'></i>"
     },
     {
       "name": "Instagram",
       "href": "https://www.instagram.com/vandy.3D/",
-      "icon": "<i class='fab fa-instagram fa-2x'></i>"
+      "icon": "<i class='fab fa-instagram text-xl'></i>"
     }
   ],
   "experience": [
+    {
+      "title": "Desarrollador web y Diseñador",
+      "company": "Colateral Marketing",
+      "date": "2023 - Presente",
+      "description": "Diseño de layouts. Desarrollo web con WordPress y Divi. Diseño y adaptación de imágenes para web. Gestión de contenidos con WordPress. Respaldo de páginas web, instalación y actualización de plugins."
+    },
     {
       "title": "Desarrollador web y Diseñador",
       "company": "Pixelab Soluciones Creativas",
@@ -45,116 +51,71 @@
       "title": "Diseñador",
       "company": "MiPC Comunicaciones",
       "date": "2016 - 2017 ",
-      "description": "Conceptualización, diseño, reproducción e implementación de artes para campañas impresas y digitales. Elaboración de animaciones promocionales utilizadas en pantallas de las sucursales y exposiciones. Diseños de gráficos utilizados para stand en exposiciones como Campus Party y TalentLand. Contacto con proveedores para impresión de material promocional requerido por el área de Marketing. Trabaje con más de 25 marcas de tecnología enfocadas en la venta de componentes y accesorios para PC entre las que destacan Gigabyte, Asus, Epson, Adata, Logitech, Cooler Master, Corsair, Nvidia, AMD, Intel, entre otras. "
+      "description": "Conceptualización, diseño, reproducción e implementación de artes para campañas impresas y digitales. Elaboración de animaciones promocionales utilizadas en pantallas de las sucursales y exposiciones. Diseños de gráficos utilizados para stand en exposiciones como Campus Party y TalentLand. Contacto con proveedores para impresión de material promocional requerido por el área de Marketing. "
     },
     {
       "id": 3,
       "title": "Diseñador",
       "company": "Creatura Comunicación",
       "date": "2015",
-      "description": "Ilustración digital.  Diseño y maquetación web. Fotomontajes para publicidad de redes sociales y web.  Diseño de propuestas para identidad gráﬁca y elaboración de respectivas aplicaciones y papeleria."
+      "description": "Ilustración digital.  Diseño web. Fotomontajes para publicidad de redes sociales y web.  Diseño de propuestas para identidad gráﬁca y elaboración de respectivas aplicaciones y papeleria."
     }
   ],
   "projects": [
     {
       "id": "1",
-      "title": "East Bridge Diorama",
-      "category": "Arte 3D",
-      "image": "./image/projects/portfolio_diorama.jpg",
-      "text": "Concept art by Julia kovalyova, rinmaho on Artstation",
-      "link": "",
-      "artstation": "https://www.artstation.com/artwork/49kYd8",
-      "behance": "https://www.behance.net/gallery/177411235/Bridge-3D-Diorama"
-    },
-    {
-      "id": "2",
-      "title": "Clover AV Group",
-      "category": "Desarrollo web",
-      "image": "./image/projects/portfolio_web_clover.jpg",
-      "text": "UI Design and Desarrollo web for clover av group. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "",
-      "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118223/Clover-Av-Group-Web-Design"
-    },
-    {
-      "id": "3",
-      "title": "Ius Violeta Logo",
-      "category": "Diseño",
-      "image": "./image/projects/portfolio_design_ius_violetas.jpg",
-      "text": "Logo design for ius violeta collective",
-      "link": "",
-      "artstation": "",
-      "behance": "https://www.behance.net/gallery/172455567/Logotipo-Ius-Violetas"
-    },
-    {
-      "id": "4",
-      "title": "Zelda Fanart",
-      "category": "Arte 3D",
-      "image": "./image/projects/portfolio_3D_zelda.jpg",
-      "text": "Zelda 3D Model fanart from the videogame Zelda:Tears of the kingdom ",
-      "link": "",
-      "artstation": "https://www.artstation.com/artwork/Jvk8nD",
-      "behance": "https://www.behance.net/gallery/177411923/Princess-Zelda-3D-Fanart"
-    },
-    {
-      "id": "5",
-      "title": "Bull kimik",
-      "category": "Desarrollo web",
-      "image": "./image/projects/portfolio_web_bullkimik.jpg",
-      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://bullkimik.com/",
-      "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118017/Bull-Kimik-Web-Design"
-    },
-    {
-      "id": "6",
-      "title": "Doroteo",
-      "category": "Desarrollo web",
-      "image": "./image/projects/portfolio_web_doroteo.jpg",
-      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "",
-      "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118349/Doroteo-Web-Design"
-    },
-    {
-      "id": "7",
-      "title": "GPS Ubicacion",
-      "category": "Desarrollo web",
-      "image": "./image/projects/portfolio_web_gpsubicacion.jpg",
-      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "https://gpsubicacion.com/",
-      "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118521/GPS-Ubicacion-Web-Design"
-    },
-    {
-      "id": "8",
       "title": "Kardagar",
       "category": "Desarrollo web",
       "image": "./image/projects/portfolio_web_kardagar.jpg",
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "https://kardashop.mx/",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/169118673/Kardagar-Web-Design"
+      "behance": "https://www.behance.net/gallery/169118673/Kardagar-Web-Design",
+      "github": ""
     },
     {
-      "id": "9",
-      "title": "Purple Overlay",
-      "category": "Diseño",
-      "image": "./image/projects/purple-stream-overlay.png",
+      "id": "2",
+      "title": "Bull kimik",
+      "category": "Desarrollo web",
+      "image": "./image/projects/portfolio_web_bullkimik.jpg",
+      "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "https://bullkimik.com/",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118017/Bull-Kimik-Web-Design",
+      "github": ""
+    },
+    {
+      "id": "3",
+      "title": "Clover AV Group",
+      "category": "Desarrollo web",
+      "image": "./image/projects/portfolio_web_clover.jpg",
+      "text": "UI Design and Desarrollo web for clover av group. Technologies used: HTML, CSS, JAVASCRIPT",
+      "link": "",
+      "artstation": "",
+      "behance": "https://www.behance.net/gallery/169118223/Clover-Av-Group-Web-Design",
+      "github": ""
+    },
+    {
+      "id": "4",
+      "title": "Doroteo",
+      "category": "Desarrollo web",
+      "image": "./image/projects/portfolio_web_doroteo.jpg",
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
       "link": "",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/158897845/Purple-Stream-Overlay-Pack"
+      "behance": "https://www.behance.net/gallery/169118349/Doroteo-Web-Design",
+      "github": ""
     },
     {
-      "id": "10",
-      "title": "Pastel Pink Overlay",
-      "category": "Diseño",
-      "image": "./image/projects/pastel-pink-overlay.jpg",
+      "id": "5",
+      "title": "GPS Ubicacion",
+      "category": "Desarrollo web",
+      "image": "./image/projects/portfolio_web_gpsubicacion.jpg",
       "text": "UI Design and Desarrollo web for bullkimik. Technologies used: HTML, CSS, JAVASCRIPT",
-      "link": "",
+      "link": "https://gpsubicacion.com/",
       "artstation": "",
-      "behance": "https://www.behance.net/gallery/177018995/Pastel-overlay-Package"
+      "behance": "https://www.behance.net/gallery/169118521/GPS-Ubicacion-Web-Design",
+      "github": ""
     }
   ]
 }
